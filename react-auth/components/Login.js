@@ -9,10 +9,10 @@ class LogIn extends React.Component {
 		};
 	}
 
-	getSession(url, data, method) {
+	/*getSession(url, data, method) {
 		//console.log(this.props);
 		this.props.ajaxRequest(url, data, method);
-	}
+	}*/
 
 	onSubmit(e) {
 		e.preventDefault();
