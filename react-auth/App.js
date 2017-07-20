@@ -13,7 +13,19 @@ class App extends React.Component {
 		//
 	}
 
-	
+	ajaxRequest(url, data, method) {
+		$.ajax({
+			url: url,
+			type: method,
+			data: data
+		})
+		.done(function(response, status) {
+			console.log("response");
+		})
+		.fail(function(xhr,e) {
+			console.log("error", xhr, "e: ",e);
+		});
+	}
 
 	render() {
 		return (
